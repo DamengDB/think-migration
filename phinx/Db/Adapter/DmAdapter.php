@@ -21,7 +21,7 @@ use RuntimeException;
 
 class DmAdapter extends PdoAdapter
 {
-    protected $version = '3.0.0';
+    protected $version = '3.0.1';
 
     /**
      * @var string[]
