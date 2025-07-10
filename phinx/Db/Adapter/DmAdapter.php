@@ -442,7 +442,7 @@ class DmAdapter extends PdoAdapter
     public function hasColumn(string $tableName, string $columnName): bool
     {
         $sql = sprintf(
-            "SELECT count(*) as count 
+            "SELECT count(*) as COUNT 
             FROM ALL_TAB_COLUMNS 
             WHERE TABLE_NAME=%s AND COLUMN_NAME=%s",
             $this->getConnection()->quote($tableName),
@@ -1298,7 +1298,7 @@ class DmAdapter extends PdoAdapter
     public function hasSchema(string $schemaName): bool
     {
         $sql = sprintf(
-            'select COUNT(*) as count from SYS.VSYSOBJECTS where TYPE$=\'SCH\' and NAME=%s',
+            'select COUNT(*) as COUNT from SYS.VSYSOBJECTS where TYPE$=\'SCH\' and NAME=%s',
             $this->getConnection()->quote($schemaName)
         );
         $result = $this->fetchRow($sql);

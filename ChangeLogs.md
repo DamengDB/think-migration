@@ -4,6 +4,10 @@
 
 ### ChangeLogs
 
+#### dm-think-migration v3.0.1 (2025-07-10)
+
+- 修改数据库大小写不敏感时执行迁移报错的问题
+
 #### dm-think-migration v3.0.0 (2025-02-08)
 
 - 新建项目，适配think-migration的3.1.1版本
