@@ -44,6 +44,7 @@ class AdapterFactory
      * @phpstan-var array<string, \Phinx\Db\Adapter\AdapterInterface|class-string<\Phinx\Db\Adapter\AdapterInterface>>
      */
     protected $adapters = [
+        'dm' => 'Phinx\Db\Adapter\DmAdapter',
         'mysql' => 'Phinx\Db\Adapter\MysqlAdapter',
         'pgsql' => 'Phinx\Db\Adapter\PostgresAdapter',
         'sqlite' => 'Phinx\Db\Adapter\SQLiteAdapter',
